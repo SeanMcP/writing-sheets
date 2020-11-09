@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writing Sheets - Toollama</title>
+    <meta
+      name="description"
+      content="Generate traceable writing sheets for young learners"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐜</text></svg>"
+    />
+    <link rel="stylesheet" href="./assets/css/tl.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1><span aria-hidden="true" role="img">🐜</span> Writing Sheets</h1>
+      <form action="sheet.html">
+        <label for="text"><b>Text</b></label>
+        <textarea name="text" id="text" cols="30" rows="10" placeholder="Type here"></textarea>
+        <fieldset>
+          <legend>Style</legend>
+          <label>
+            <input type="radio" name="font" value="lines" checked>
+            <b>Lined</b>
+          </label>
+          <label>
+            <input type="radio" name="font" value="dots">
+            <b>Without lines</b>
+          </label>
+        </fieldset>
+        <button class="button">Create</button>
+      </form>
+      <div class="sheet" id="preview">
+        And see a preview here
+      </div>
+    </main>
+    <script src="./assets/js/main.js" type="module"></script>
+  </body>
+</html>

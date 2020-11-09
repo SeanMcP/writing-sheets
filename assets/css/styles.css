@@ -1,0 +1,25 @@
+/* Application styles */
+
+@font-face {
+  font-family: Dots;
+  src: url("../fonts/KGPrimaryDots.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Lines;
+  src: url("../fonts/KGPrimaryDotsLined.ttf") format("truetype");
+}
+
+#preview {
+  border: 1px solid var(--gray300);
+  margin: 1rem 0;
+}
+
+.sheet {
+    font-family: Lines, Futura, "Century Gothic", sans-serif;
+    font-size: 5rem;
+}
+
+[data-font="dots"] {
+  font-family: Dots, Futura, "Century Gothic", sans-serif;
+}
